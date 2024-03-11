@@ -31,7 +31,6 @@ function findElementByClass(rootElement, className) {
         return rootElement;
     }
 
-    // Рекурсивный поиск среди дочерних элементов
     for (const child of rootElement.children) {
         const found = findElementByClass(child, className);
         if (found) {
